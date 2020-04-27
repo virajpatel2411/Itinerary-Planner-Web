@@ -1,0 +1,49 @@
+<form style="border: 1px solid #ccc;">
+  <div class="container">
+    <h1>Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr />
+
+    <label for="name"><b>Name</b></label>
+    <input
+      type="text"
+      placeholder="Enter Name"
+      name="name"
+      [(ngModel)]="user.userName"
+      required
+    />
+
+    <label for="number"><b>Mobile Number</b></label>
+    <input
+      type="number"
+      placeholder="Mobile Number"
+      name="number"
+      [(ngModel)]="user.mobNo"
+      required
+    />
+
+    <label for="email"><b>Email</b></label>
+    <input
+      type="text"
+      placeholder="Enter Email"
+      name="email"
+      [(ngModel)]="user.email"
+      required
+    />
+
+    <label for="psw"><b>Password</b></label>
+    <input
+      type="password"
+      placeholder="Enter Password"
+      name="psw"
+      [(ngModel)]="user.password"
+      required
+    />
+
+    <div class="clearfix">
+      <button type="submit" class="signupbtn" (click)="signup()">
+        Sign Up
+      </button>
+    </div>
+  </div>
+</form>
